@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+	function pulaLinha() {
+		document.write("<br>");
+	}
+
+	function mostra(frase) {
+		document.write(frase);
+	}
+
+	var anoDaChegadaDosPortugueses = 1500;
+	var anoAtual = 2023;
+	var idadeMediaDeTerFilhos = 28;
+	var numeroDeGeracoesPassadas = (anoAtual - anoDaChegadaDosPortugueses) / idadeMediaDeTerFilhos;
+
+	mostra("<h2>Programa que cálcula o número de gerações passadas desde a época da chegada dos portugueses ao Brasil.</h2>");
+	pulaLinha();
+	mostra("Se passaram " + Math.round(numeroDeGeracoesPassadas) + " gerações.");
+</script>
