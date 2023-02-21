@@ -1,0 +1,16 @@
+<meta charset="UTF-8">
+
+Digite o seu nome
+<input /> 
+<button>Enviar</button>
+
+<script>
+    var entrada = document.querySelector("input");
+    var botao = document.querySelector("button");
+
+    function exibeNome() {
+        alert("Olá " + entrada.value);
+    }
+
+    botao.onclick = exibeNome;
+</script>
