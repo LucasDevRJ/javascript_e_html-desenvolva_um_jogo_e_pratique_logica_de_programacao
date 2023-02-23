@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+<button>Listar nomes</button>
+
+<script>
+	var nomes = [];
+
+	function cadastrarNome() {
+		var quantidade = parseInt(prompt("Digite a quantidade de nomes da lista: "));
+		var contador = 0;
+
+		while (contador < quantidade) {
+
+			var nome = prompt("Digite o nome: ");
+			var achou = false;
+			
+			for (var i = 0; i < nomes.length; i++) {
+				if (nome == nomes[i]) {
+					alert("Não digite nomes iguais!!");
+					achou = true;
+				}
+			}
+
+			if (achou == false) {
+				nomes.push(nome);
+				contador++;
+			}
+		}
+
+		listarNomes();
+	}
+
+	function listarNomes() {
+		document.write("Nomes:");
+		document.write("<br>");
+		for (var i = 0; i < nomes.length; i++) {
+			document.write(nomes[i] + "<br>");
+		}
+	}
+
+	var botao = document.querySelector("button");
+	botao.onclick = cadastrarNome;
+
+</script>
