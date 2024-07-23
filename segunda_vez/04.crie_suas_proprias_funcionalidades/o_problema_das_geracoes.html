@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+
+<script>
+	var anoPortuguesesChegaramBrasil = 1500;
+	var anoAtual = 2024;
+	var idadeMediaPessoasTemFilhos = 28;
+
+	function pulaLinha() {
+		document.write("<br>");
+	}
+
+	function mostra(mensagem) {
+		document.write(mensagem);
+		pulaLinha();
+	}
+
+	var anosPassaramChegadaPortugueses = anoAtual - anoPortuguesesChegaramBrasil;
+	var geracoesQuePassaramDesdeChegadaPortugueses = anosPassaramChegadaPortugueses / idadeMediaPessoasTemFilhos;
+
+	mostra("Se passaram " + geracoesQuePassaramDesdeChegadaPortugueses + " gerações desde a chegada dos portugueses");
+</script>
