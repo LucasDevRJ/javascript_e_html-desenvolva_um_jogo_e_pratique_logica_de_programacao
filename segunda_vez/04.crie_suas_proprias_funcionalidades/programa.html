@@ -44,12 +44,20 @@
 		document.write("<br>");
 	}
 
+	function mostra(mensagem) {
+		document.write(mensagem);
+		pulaLinha();
+	}
+
 	var ano = 2016; //variável para armazenar valor do ano
-	document.write("Flávio tem " + (ano - 1977) + " anos");
-	pulaLinha();
-	document.write("Joaquim tem " + (ano - 1996) + " anos");
-	pulaLinha();
+	//document.write("Flávio tem " + (ano - 1977) + " anos");
+	mostra("Flávio tem " + (ano - 1977) + " anos");
+	//pulaLinha();
+	//document.write("Joaquim tem " + (ano - 1996) + " anos");
+	mostra("Joaquim tem " + (ano - 1996) + " anos");
+	//pulaLinha();
 
 	ano = 2017; //alterando valor
-	document.write("Barney tem " + (ano - 1976) + " anos");
+	//document.write("Barney tem " + (ano - 1976) + " anos");
+	mostra("Barney tem " + (ano - 1976) + " anos");
 </script>
