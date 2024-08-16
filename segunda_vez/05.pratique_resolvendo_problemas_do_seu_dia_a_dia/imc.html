@@ -11,9 +11,33 @@
         pulaLinha();
     }
 
+    /*
     var pesoFlavio = 73;
     var alturaFlavio = 1.71;
+
     var imcFlavio = pesoFlavio / (alturaFlavio * alturaFlavio);
 
-    mostra("O IMC do Flávio é " + imcFlavio);
+    mostra("O imc do Flávio é " + imcFlavio);
+
+    var pesoAmigo = 68;
+    var alturaAmigo = 1.72;
+
+    var imcAmigo = pesoAmigo / (alturaAmigo * alturaAmigo);
+
+    mostra("O imc do amigo é " + imcAmigo);
+    */
+
+    function calculaImc(peso, altura) {
+        var imc = peso / (altura * altura);
+        mostra("O IMC calculado é " + imc);
+    }
+
+    var pesoFlavio = 73;
+    var alturaFlavio = 1.71;
+    calculaImc(73, 1.71);
+
+    var pesoAmigo = 68;
+    var alturaAmigo = 1.72;
+    calculaImc(68, 1.72);
+
 </script>
